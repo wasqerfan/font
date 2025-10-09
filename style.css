@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* / utilities */
+:root {
+    --primary: #014eff;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+.default-bg{
+    background-color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+}
+
+.default-txt{
+    color: var(--primary);
+}
+
+.section-title{
+    border-bottom: 2px var(--primary) solid;
+}
+
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--primary);
+}
+
+.bi-list {
+    font-size: 2rem;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.bi-whatsapp {
+    font-size: 1.5em;
+}
+
+.icon-mobile-size {
+    font-size: 1em;
+}
+
+.hero {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, 0.9)), url("images/hero-img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-half {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, 0.9)), url("images/hero-img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+@media (max-width: 992px) {
+    .hero-btn {
+        width: 200px;
+    }
+}
+
+
+
+.service-icon{
+    font-size: 3em;
+}
+
+.service-btn:hover{
+    background-color: var(--primary);
+}
+
+.answer{
+    display: none;
+}
+
+.down{
+    font-size: 1.5em;
+}
+
+.up{
+    font-size: 1.5em;
+}
+
+.faq-btn:focus{
+    border: none;
+}
+
+#instant-price {
+  background: linear-gradient(to bottom, #f9fafb, #f1f3f5);
+  border-radius: 20px;
+}
+#priceForm input, #priceForm select {
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+#resultPrice {
+  transition: opacity 0.3s ease;
+}
+
