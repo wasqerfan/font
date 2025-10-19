@@ -5,7 +5,7 @@ body {
 
 /* / utilities */
 :root {
-    --primary: #014eff;
+    --primary: #00aef0;
     --light: #F1F8FF;
     --dark: #0F172B;
 }
@@ -106,4 +106,112 @@ a{
 #resultPrice {
   transition: opacity 0.3s ease;
 }
+
+
+
+
+
+.testimonial-section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.testimonial-section h2 {
+    text-align: center;
+    color: #00aef0;
+    margin-bottom: 30px;
+}
+.testimonial-form {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.testimonial-form input,
+.testimonial-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.testimonial-form button {
+    background: #00aef0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.stars span {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.stars .checked {
+    color: #ffcc00;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+.faq-section h2 {
+    text-align: center;
+    color: #00aef0;
+    margin-bottom: 30px;
+}
+.faq-item {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.faq-question {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: #f9f9f9;
+    transition: max-height 0.3s ease;
+}
+.faq-answer p {
+    margin: 15px 0;
+}
+
+
+
+
 
